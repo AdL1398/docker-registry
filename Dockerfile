@@ -1,12 +1,12 @@
 # VERSION 0.1
 # DOCKER-VERSION  0.7.3
-# AUTHOR:         Sam Alba <sam@docker.com>
+# AUTHOR:         Adisorn Lertsinsrubtavee <al773@gmail.com>
 # DESCRIPTION:    Image with docker-registry project and dependecies
 # TO_BUILD:       docker build -rm -t registry .
 # TO_RUN:         docker run -p 5000:5000 registry
 
-# Latest Ubuntu LTS
-FROM ubuntu:14.04
+# Ubuntu for ARM base image
+FROM mazzolino/armhf-ubuntu
 
 # Update
 RUN apt-get update \
